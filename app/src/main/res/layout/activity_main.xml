@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:gravity="center"
         android:text="Клеточное наполнение"
-        android:textSize="29dp"
+        android:textSize="29sp"
         android:textColor="@color/purple"
         android:fontFamily="@font/new_font"
         android:layout_marginBottom="10dp"
@@ -24,29 +24,22 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/cells"
         android:layout_width="match_parent"
-        android:layout_height="580dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
 
     </androidx.recyclerview.widget.RecyclerView>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/but_add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/new_font"
+        android:text="СОТВОРИТЬ"
+        android:textSize="20sp">
 
-        <Button
-            android:id="@+id/but_add"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:layout_alignParentBottom="true"
-            android:fontFamily="@font/new_font"
-            android:text="СОТВОРИТЬ"
-            android:textSize="20dp">
-
-        </Button>
-
-    </RelativeLayout>
-
-
+    </Button>
 
 </LinearLayout>
